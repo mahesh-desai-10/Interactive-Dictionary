@@ -9,30 +9,119 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: gray; /* https://colorhunt.co/palette/faf7f0d8d2c2b174574a4947 */
+  background-color: #d8d2c2; /* https://colorhunt.co/palette/faf7f0d8d2c2b174574a4947 */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  height: 70vh;
+  height: 72vh;
   width: 45vw;
-  border: 2px solid white;
+  background-color: #faf7f0;
+  border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 1rem; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar {
   height: 10vh;
   width: 45vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+  margin-bottom: 1rem;
+}
+
+.search-box {
+  height: 4vh;
+  width: 90%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 1.5rem;
+  background-color: #f0ece3;
+  padding: 0.5rem;
+}
+
+.search-icon {
+  height: 3.3rem;
+  width: 3.2rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #d8d2c2;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .information {
   height: 55vh;
   width: 45vw;
-  border: 2px solid red;
+}
+
+.word-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.pronunciation {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  padding: 0.5rem;
+  background-color: #d8d2c2;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+.pronunciation:hover {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  padding: 0.5rem;
+  background-color: lightsteelblue;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #4a4947;
+}
+
+.meaning,
+.example,
+.synonyms,
+.antonyms {
+  margin-bottom: 1rem;
+}
+
+.meaning p,
+.example p,
+.synonyms p,
+.antonyms p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
 }

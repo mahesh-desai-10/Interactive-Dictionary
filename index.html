@@ -5,12 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
-        <div class="search-bar"></div>
-        <div class="information">
+      <div class="search-bar">
+        <input type="text" class="search-box" />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <div class="information">
+        <div class="word-info">
+          <p>Hello</p>
+          <button class="pronunciation">
+            <i class="fa-solid fa-volume-high"></i>
+            <audio
+              class="word-audio"
+              src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-uk.mp3"
+            ></audio>
+          </button>
         </div>
+        <div class="meaning">
+          <p class="heading">Meaning :</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui
+            harum at sed vero beatae, nobis aspernatur esse, voluptates hic
+            possimus voluptas, officiis magni natus? Iure provident omnis
+            cupiditate incidunt.
+          </p>
+        </div>
+        <div class="example">
+          <p class="heading">Example :</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
+            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
+            expedita atque repellendus dolor ipsam, unde eligendi corrupti
+            mollitia incidunt deserunt.
+          </p>
+        </div>
+        <div class="synonyms">
+          <p class="heading">synonyms :</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
+            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
+            expedita atque repellendus dolor ipsam, unde eligendi corrupti
+            mollitia incidunt deserunt.
+          </p>
+        </div>
+        <div class="antonyms">
+          <p class="heading">antonyms :</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
+            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
+            expedita atque repellendus dolor ipsam, unde eligendi corrupti
+            mollitia incidunt deserunt.
+          </p>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
