@@ -16,57 +16,35 @@
   <body>
     <div class="container">
       <div class="search-bar">
-        <input type="text" class="search-box" />
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Enter a word to look up its meaning"
+        />
         <button class="search-icon">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      <div class="information">
+      <div class="information hide">
         <div class="word-info">
-          <p>Hello</p>
+          <p class="wordCopy">Hello</p>
           <button class="pronunciation">
             <i class="fa-solid fa-volume-high"></i>
-            <audio
-              class="word-audio"
-              src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-uk.mp3"
-            ></audio>
           </button>
+          <audio class="word-audio" src=""></audio>
+          <p id="no-audio"></p>
         </div>
         <div class="meaning">
           <p class="heading">Meaning :</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui
-            harum at sed vero beatae, nobis aspernatur esse, voluptates hic
-            possimus voluptas, officiis magni natus? Iure provident omnis
-            cupiditate incidunt.
-          </p>
+          <p id="meaning"></p>
         </div>
         <div class="example">
           <p class="heading">Example :</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
-            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
-            expedita atque repellendus dolor ipsam, unde eligendi corrupti
-            mollitia incidunt deserunt.
-          </p>
+          <p id="example"></p>
         </div>
         <div class="synonyms">
           <p class="heading">synonyms :</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
-            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
-            expedita atque repellendus dolor ipsam, unde eligendi corrupti
-            mollitia incidunt deserunt.
-          </p>
-        </div>
-        <div class="antonyms">
-          <p class="heading">antonyms :</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia saepe
-            ab voluptas soluta placeat nulla perspiciatis qui quos blanditiis
-            expedita atque repellendus dolor ipsam, unde eligendi corrupti
-            mollitia incidunt deserunt.
-          </p>
+          <p></p>
         </div>
       </div>
     </div>
